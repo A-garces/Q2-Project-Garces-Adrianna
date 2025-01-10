@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Project</title>
+
+    <!-- Include Bootstrap via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Fonts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Navigation Bar  -->
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)"></a>
+      <img src="catlogo.png" alt="logo" style="width: 40px;" class="rounded-pill">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recipe.html">Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html">Submit Recipes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-danger" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- End of NavBar  -->
+
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
+  <!-- Recipe Card  -->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col"> 
+      <div class="card h-100">
+        <img src="1.png" class="card-img-top" alt="garlicrice">
+        <div class="card-body">
+          <h5 class="card-title">Garlic Fried Rice</h5>
+          <p class="card-text">Garlic Fried Rice or Sinangag is steamed rice fried with lots of garlic. This is usually considered as part of their breakfast food for the Filipinos!</p>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Garlicrice">
+            See Recipe
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="Garlicrice">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2 class="modal-title">Garlic Fried Rice Recipe</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <b>Ingredients:</b>
+                <ul>
+                  <li>2 tbsp of any cooking oil.</li>
+                  <li>1/2 tsp salt.</li>
+                  <li>10 colves garlic minced.</li>
+                  <li>2 cups of cooked rice, preferred leftover rice.</li>
+                  <li>Optional: Spices of your liking.</li>
+                </ul>
+
+              <hr>
+
+                <b>Instruction:</b>
+                <ol>
+                  <li>Heat a large wok or non-stick pan over medium high heat. Once hot, add in the oil. Add in the salt and mix into the oil.</li>
+                  <li>Add in the garlics and cook over medium hear until golden brown or crispy.</li>
+                  <li>Add in the leftover cooked rice, and break apart any large chunk if any. Mix the rice and the ingredients well, and leave to cook for 4-5 minutes over medium high heat. You can add more seasoning if it's not up to your liking.</li>
+                  <li>Turn off the heat and enjoy!</li>
+                </ol>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="2.png" class="card-img-top" alt="Tortang">
+        <div class="card-body">
+          <h5 class="card-title">Tortang Talong</h5>
+          <p class="card-text">This classic tortang talong recipe is a perfect go-to in most Filipino households. This is because it is quick, easy, and Filipinos would often cook this as their breakfast!</p>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Tortangtalong">
+            See Recipe
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="Tortangtalong">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2 class="modal-title">Tortang Talong Recipe</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <b>Ingredients:</b>
+                  <ul>
+                    <li>4 pieces of Eggplant, prefered Chinese eggplant.</li>
+                    <li>2 pieces of raw eggs.</li>
+                    <li>1 teaspoon of salt</li>
+                    <li>6 tbsp of any cooking oil.</li>
+                    <li>Optional: Spices of your liking.</li>
+                  </ul>
+  
+                <hr>
+  
+                  <b>Instruction:</b>
+                  
+                  <ol>
+                    <li>Grill the eggplant on the stovetop until the color of the skin turned almost charcoal.</li>
+                    <li>Let it cool before peeling the skin off.</li>
+                    <li>Crack the egg into the bowl, add any seasoning of your likings, then mix it well.</li>
+                    <li>Place the eggplant on a flat plate and mashing it flat using fork.</li>
+                    <li>Heat the pan on medium heat and pour the cooking oil.</li>
+                    <li>Dip the flatten eggplant carefully into the egg mixture and quickly put it onto the hot pan.</li>
+                    <li>Cook each side for 3-4 min on medium heat, once cooked to your likings, serve and enjoy!</li>
+                  </ol>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100">
+        <img src="3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Filipino Omelet</h5>
+          <p class="card-text">Making Filipino Omelet is quick and easy. The procedure is so simple to the point that newbies can easily understand and apply. Filipino would also cook this as their breakfast meal!</p>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Filiomelet">
+            See Recipe
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="Filiomelet">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2 class="modal-title">Filipino Omelet Recipe</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <b>Ingredients:</b>
+                  <ul>
+                    <li>3 large eggs.</li>
+                    <li>2 piece of tomatoes, diced.</li>
+                    <li>1 piece red onion, diced.</li>
+                    <li>1/4 teaspoon ground black pepper.</li>
+                    <li>1/4 teaspoon sea salt.</li>
+                    <li>2 tbsp of cooling oil</li>
+                    <li>Optional: Spices of your liking </li>
+                  </ul>
+  
+                <hr>
+  
+                  <b>Instruction:</b>
+                  
+                  <ol>
+                    <li>Crack the eggs into a bowl, add your salt and pepper or seasoning of your liking, and mix it well.</li>
+                    <li>Heat up the pan and pour the cooking oil.</li>
+                    <li>Saute the onion and tomatoes for 2 minutes before adding ur mixture, cook for 3-4 minutes each side in medium heat.</li>
+                    <li>Once cooked all 4 Omelet, turn off the heat and enjoy!</li>
+                  </ol>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sizzling Pork Sisig</h5>
+          <p class="card-text">Pork sisig is a popular Filipino dish. It can be considered as a main dish or an appetizer during lunch or dinner!</p>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#porksisig">
+            See Recipe
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="porksisig">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2 class="modal-title">Sizzling Pork Sisig Recipe</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <b>Ingredients:</b>
+                  <ul>
+                    <li>1 lb of pig ears.</li>
+                    <li>1 lb of pig snout.</li>
+                    <li>1 lb of pork belly.</li>
+                    <li>2 pieces of onion, minced.</li>
+                    <li>3 pieces of bay leaves.</li>
+                    <li>2 tbsp of salt</li>
+                    <li>4 thombs ginger, crushed</li>
+                    <li>1 quarts of water</li>
+                    <li>Optional: Spices of your liking.</li>
+                  </ul>
+
+                  <b>Ingredients for the dressing:</b>
+                  <ul>
+                    <li>½ cup Lady’s Choice Mayonnaise.</li>
+                    <li>2 tbsp of sukang iloko. (Alternative: white vinegar)</li>
+                    <li>¼ tbsp of ground black pepper.</li>
+                    <li>1 tbsp of salt.</li>
+                    <li>1 tbsp of sugar.</li>
+                    <li>2 tbsp of salt.</li>
+                    <li>¼ cup of liver spread.</li>
+                    <li>2 Calamansi</li>
+                    <li>1 tbsp of Knorr Liquid Seasoning.</li>
+                    <li>Optional: Spices of your liking.</li>
+                  </ul>
+  
+                <hr>
+  
+                  <b>Instruction:</b>
+                  
+                  <ol>
+                    <li>Combine pig ears, snout, pork belly, ginger, bay leaves, 2 teaspoons salt, and 1 quart of water in a cooking pot. Boil for 1 hour. After boiling, Remove from the pot and drain the water.</li>
+                    <li>Heat-up your grill, Start grilling the pig parts for 5 minutes per side. Remove from the grill afterwards and let it cool down.</li>
+                    <li>Make the dressing by combining all the dressing ingredients, Mix all of it well.</li>
+                    <li>Chop the grilled pig parts to small pieces and into the large-mixing bowl, mix the chopped pork with onion and the dressing micture. Toss until all the ingredients are well blended.</li>
+                    <li>Transfer to the serving plate and enjoy!</li>
+                  </ol>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="5.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pork Sinigang</h5>
+          <p class="card-text">Sinigang is a sour soup native to the Philippines, but is very tasty to eat for lunch!</p>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Porksinigang">
+            See Recipe
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="Porksinigang">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2 class="modal-title">Pork Sinigang Recipe</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <b>Ingredients:</b>
+                  <ul>
+                    <li>2 lbs of pork belly or any part of choice.</li>
+                    <li>1 lb of young tamarind.</li>
+                    <li>1 bunch of water spinach chopped, or kangkong.</li>
+                    <li>8 pieces of string beans, cut into 2-inch pieces.</li>
+                    <li>2 pieces of eggplant, sliced.</li>
+                    <li>8 pieces of okra</li>
+                    <li>2 pieces of tomatoes, sliced into wedges.</li>
+                    <li>2 pieces of long green pepper.</li>
+                    <li>2 pieces of long green pepper.</li>
+                    <li>1 piece of onion, sliced into wedges.</li>
+                    <li>2 quarts of water</li>
+                    <li>Fish sauce and ground black pepper.</li>
+                    <li>Optiona1: 2 piece daikon radish.</li>
+                    <li>Optional: Spices of your liking.</li>
+                  </ul>
+  
+                <hr>
+  
+                  <b>Instruction:</b>
+                  
+                  <ol>
+                    <li>Boil the young tamarind in the water for 40 minutes. Filter the tamarind broth using a strainer or any method to fliter it, afterwards, Squeeze the tamarind to extract its remaining juices.</li>
+                    <li>Pour the tamarind broth into a cooking pot and let it boil and then add the onion, pork belly, and half the amount of the tomatoes. While it is boiling. Skim-off most of the floating scums, then pour 1 tbsp of fish sauce, cover and continue to simmer for 1 hour.</li>
+                    <li>Add the daikon radish (Optional) and eggplants, Cook for 5 minutes. Then add the long green pepper, string beans, the remaining tomatoes, and okra, Cook it for 3 minutes.</li>
+                    <li>Add the chopped water spinach stalks and season with fish sauce and ground black pepper, and cook it for 2 minutes. Afterwards, put the water spinach leaves and turn off the head before covering it with a lid. Let the residual heat cook the leaves for 3 more minutes.</li>
+                    <li>Afterwards, serve and enjoy!</li>
+                  </ol>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="6.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Garlic Butter Shrimp</h5>
+          <p class="card-text">Garlic Butter Shrimp is a super easy dish to make. It is often cooked for lunch or dinner!</p>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#garlicbuttershrimp">
+            See Recipe
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="garlicbuttershrimp">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2 class="modal-title">Garlic Butter Shrimp Recipe</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <b>Ingredients:</b>
+                  <ul>
+                    <li>2 lbs of Shrimp.</li>
+                    <li>2 tbsp of Parsley, chopped.</li>
+                    <li>¼ cup of Butter.</li>
+                    <li>1 head of Garlic, crushed.</li>
+                    <li>1 cup of lemon lime soda.</li>
+                    <li>1 tbsp of lemon juice.</li>
+                    <li>Salt and pepper..</li>
+                    <li>Optional: Spices of your liking.</li>
+                  </ul>
+  
+                <hr>
+  
+                  <b>Instruction:</b>
+                  
+                  <ol>
+                    <li>Boil the lemon soda, once it is boiling, turn off the heat and add the shrimp in pot to marinate as long as you desire, or atleast 3 hours.</li>
+                    <li>After marinating, heat up the pan in low heat and add butter. Add garlics and cook until light brown.</li>
+                    <li>Put the shrimp on the pan, switch the heat to high, and stir-fry until it is hot.</li>
+                    <li>Season to your desires, ground black pepper, salt, and lemon juices before stiring. Add parsley after and cook for 1 minute more.</li>
+                    <li>Afterwards, serve and enjoy!</li>
+                  </ol>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="7.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Chicken Adobo</h5>
+          <p class="card-text">Chicken Adobo is an authentic Filipino dish and is one of the mostly recognized Filipino food, and is ideally served during dinner.</p>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#chickenadobo">
+            See Recipe
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="chickenadobo">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2 class="modal-title">Chicken Adobo Recipe</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <b>Ingredients:</b>
+                  <ul>
+                    <li>2 lbs of Chicken.</li>
+                    <li>3 pieces of dried bay leaves.</li>
+                    <li>4 tbsp of soy sauce.</li>
+                    <li>6 tbsp of white vinegar.</li>
+                    <li>5 cloves of garlic.</li>
+                    <li>1 ½ cups of water.</li>
+                    <li>3 tbsp of cooking oil.</li>
+                    <li>1 tbsp of sugar.</li>
+                    <li>¼ teaspoon of salt</li>
+                    <li>1 teaspoon of whole peppercorn</li>
+                    <li>Optional: Spices of your liking.</li>
+                  </ul>
+  
+                <hr>
+  
+                  <b>Instruction:</b>
+                  
+                  <ol>
+                    <li>Combine chicken, soy sauce, and garlic in a large bowl. Mix well and Marinate the chicken for at least 1 hour. Note: the longer the time, the better</li>
+                    <li>Then Heat ur cooking pot and pour ur cooking oil. Once it's hot enough, pan-fry the marinated chicken for 2 minutes per side.</li>
+                    <li>Pour-in the remaining marinade, including the garlic. Add water and bring it to a boil.</li>
+                    <li>Add dried bay leaves and whole peppercorn, then Simmer for 30 minutes or until the chicken is tender. Add your vinegar and stir cook for 10 minutes.</li>
+                    <li>Afterwards, Put-in the sugar and salt, then turn off the heat and stir one more time. Serve and enjoy!</li>
+                  </ol>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card h-100">
+        <img src="8.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Grilled Liempo</h5>
+          <p class="card-text">Inihaw na Liempo is known as Grilled Pork Belly in Filipino. it is also popluar and favorite dishes in the philippines, which they often cook this during special day, holiday, or dinner!</p>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#grilledliempo">
+            See Recipe
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="grilledliempo">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2 class="modal-title">Grilled Liempo Recipe</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <b>Ingredients:</b>
+                  <ul>
+                    <li>2 lbs. pork belly</li>
+                    <li>½ cup soy sauce</li>
+                    <li>1 piece lemon or 3 to 4 pieces calamansi</li>
+                    <li>½ tsp ground black pepper</li>
+                    <li>1 tsp salt</li>
+                    <li>4 cloves garlic crushed</li>
+                    <li>¼ cup banana catsup</li>
+                    <li>1 tbsp cooking oil</li>
+                    <li>Optional: Spices of your liking.</li>
+                  </ul>
+  
+                <hr>
+  
+                  <b>Instruction:</b>
+                  
+                  <ol>
+                    <li>Combine pork belly with the soy sauce, lemon, salt, ground black pepper, garlic and mix well. Marinade the pork belly for at least 3 hours.</li>
+                    <li>In a bowl, pour the pork belly marinade. Add banana catsup and cooking oil. Stir well. (This will be the basting sauce)</li>
+                    <li>Grill the pork belly while basting the top part of the pork after flipping it over.</li>
+                    </li>
+                    <li>Add dried bay leaves and whole peppercorn, then Simmer for 30 minutes or until the chicken is tender. Add your vinegar and stir cook for 10 minutes.</li>
+                    <li>Serve and enjoy!</li>
+                  </ol>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="9.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lechon Kawalil</h5>
+          <p class="card-text">Lechon kawali or Pan-roasted pork to some is different from Lechon, which is the national dish of the Philippines. Lechon is roasted while Lechon kawali are deep-fried. This is often cooked for snacks but ideally dinner with rice!</p>
+          <!-- Button to Open the Modal -->
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#lechonkawali">
+            See Recipe
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="lechonkawali">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2 class="modal-title">Lechon kawali Recipe</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <b>Ingredients:</b>
+                  <ul>
+                    <li>2 lbs. of pork belly</li>
+                    <li>½ tbsp of salt</li>
+                    <li>2 tbsp of whole pepper corn</li>
+                    <li>5 pieces of dried bay leaves</li>
+                    <li>3 cups of cooking oil</li>
+                    <li>34 ounce of water</li>
+                    <li>Optional: Spices of your liking.</li>
+                  </ul>
+  
+                <hr>
+  
+                  <b>Instruction:</b>
+                  
+                  <ol>
+                    <li>Pour water into the cooking pot and bring it to a boil, add the pork bely and 1 tbsp of salt. put some peppercorn and bay leaves, boil for 30 minutes or until the meat gets tender.</li>
+                    <li>Remove the meat from the pot and let it cook to touch, Then spread 1 tbsp of salt on the pork belly, Make sure it is all distributely salted. Afterwatds, prepare the cooking pot with oil to deep-fry the pork belly.</li>
+                    <li>Be caution as you deep-fry the boiled pork-belly, deep-fry until it is crispy. Remove the fried meat, cool it down before serving and enjoy!
+                    </li>
+                  </ol>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+  </div>
+
+
+<h6>Created by Adrianna Garces | 24-25 9-Sapphire</h6>
+  <!-- End of the Recipe Card  -->
+</body>
+</html>
